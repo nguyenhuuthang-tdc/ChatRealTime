@@ -5,6 +5,7 @@
     <h1>{{ title }}</h1>
     <h1>{{ brand }}</h1>
     <h1>{{ age }}</h1>
+    <h1>{{ job }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -30,7 +31,8 @@ export default {
       msg: 'Thắng đẹp trai vãi đái',
       title: 'Thắng qua môn, ahihi thắng rớt môn gòi =))',
       age: 'Thắng 20 tuổi vẫn thất nghiệp',
-      brand: 'Thắng đậu tốt nghiệp loại ngu'
+      brand: 'Thắng đậu tốt nghiệp loại ngu',
+      job: 'Thắng làm ở Apple'
     }
   }
 }
