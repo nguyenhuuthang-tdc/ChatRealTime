@@ -24,7 +24,8 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Thắng đẹp trai vãi đái'
+      msg: 'Thắng đẹp trai vãi đái',
+      title: 'Thắng qua môn'
     }
   }
 }
