@@ -3,11 +3,8 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h1>{{ title }}</h1>
-<<<<<<< HEAD
-    <h1>{{ age }}</h1>
-=======
     <h1>{{ brand }}</h1>
->>>>>>> de0b5e5987dcc1de738f8c3c496edd4986c9f8b7
+    <h1>{{ age }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -32,11 +29,8 @@ export default {
     return {
       msg: 'Thắng đẹp trai vãi đái',
       title: 'Thắng qua môn, ahihi thắng rớt môn gòi =))',
-<<<<<<< HEAD
-      age: 'Thắng 20 tuổi vẫn thất nghiệp'
-=======
+      age: 'Thắng 20 tuổi vẫn thất nghiệp',
       brand: 'Thắng đậu tốt nghiệp loại ngu'
->>>>>>> de0b5e5987dcc1de738f8c3c496edd4986c9f8b7
     }
   }
 }
