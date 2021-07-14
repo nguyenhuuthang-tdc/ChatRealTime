@@ -1,42 +1,44 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <!-- <h1>{{ title }}</h1>
-    <h1>{{ brand }}</h1>
-    <h1>{{ age }}</h1>
-    <h1>{{ scores }}</h1>
-    <h1>{{ job }}</h1> -->
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <comp-header 
+      v-bind:titleHeader="titleHeader"
+      v-on:changeTitleEvent="changeTitleEvent"
+    />
+    <list-user v-bind:listUser="Users" />
+    <comp-footer v-bind:titleHeader="titleHeader" />
   </div>
 </template>
 
 <script>
+import CompHeader from './components/CompHeader.vue'
+import ListUser from './components/ListUser.vue'
+import CompFooter from './components/CompFooter.vue'
 export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to VueJs',
-      // title: 'Thắng qua môn, ahihi thắng rớt môn gòi =))',
-      // age: 'Thắng 20 tuổi vẫn thất nghiệp',
-      // brand: 'Thắng đậu tốt nghiệp loại ngu',
-      // scores: 'Thắng 0 điểm môn FE2',
-      // job: 'Thắng làm ở Apple'
+      titleHeader: "Header of Page, VueJs Welcome",
+      // titleFooter: "Footer of Page, VueJs Goodbye",
+      //array of object user
+      Users: [
+        {id: 1,name: "Huu Thang", active: false},
+        {id: 2,name: "Minh Tri", active: false},
+        {id: 3,name: "Suong", active: true},
+        {id: 4,name: "Tho", active: false},
+        {id: 5,name: "Son", active: true},
+      ]
     }
-  }
+  },
+  components: {
+    CompHeader,
+    ListUser,
+    CompFooter,
+  },
+  methods: {
+    changeTitleEvent() {
+      this.titleHeader = "Thắng ngu vãi đái";
+    }
+  },
 }
 </script>
 
