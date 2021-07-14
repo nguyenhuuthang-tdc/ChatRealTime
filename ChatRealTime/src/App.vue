@@ -26,7 +26,7 @@ export default {
   data () {
     return {
       msg: 'Thắng đẹp trai vãi đái',
-      title: 'Thắng qua môn'
+      title: 'Thắng qua môn, ahihi thắng rớt môn gòi =))'
     }
   }
 }
