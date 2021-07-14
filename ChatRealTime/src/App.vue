@@ -3,6 +3,7 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h1>{{ title }}</h1>
+    <h1>{{ age }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -26,7 +27,8 @@ export default {
   data () {
     return {
       msg: 'Thắng đẹp trai vãi đái',
-      title: 'Thắng qua môn, ahihi thắng rớt môn gòi =))'
+      title: 'Thắng qua môn, ahihi thắng rớt môn gòi =))',
+      age: 'Thắng 20 tuổi vẫn thất nghiệp'
     }
   }
 }
